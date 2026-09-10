@@ -532,3 +532,65 @@ rgba(0, 0, 0, 0.12) 100%
     }
 
 }
+/* ========================================
+   CABEÇALHO SOBRE O HERO
+   ======================================== */
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 86px;
+}
+
+.header a {
+    color: var(--cor-branca);
+}
+
+.nav a {
+    color: var(--cor-branca);
+}
+
+.nav a:hover {
+    color: #f1d4a8;
+}
+
+
+/* ---------- Menu mobile ---------- */
+
+@media (max-width: 768px) {
+
+    .header {
+        background: rgba(47, 56, 36, 0.92);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .header .container {
+        min-height: 72px;
+    }
+
+    .nav {
+        background: var(--cor-fundo-claro);
+    }
+
+    .nav a {
+        color: var(--cor-texto);
+    }
+
+    .nav a:hover {
+        color: var(--cor-principal);
+    }
+
+}
