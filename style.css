@@ -308,3 +308,227 @@ p {
         padding: 10px 0;
     }
 }
+/* ========================================
+   HERO / PRIMEIRA SEÇÃO
+   ======================================== */
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    background-image: url("imagens/salao-buffet.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    color: var(--cor-branca);
+
+    overflow: hidden;
+}
+
+
+/* ---------- Camada escura sobre a foto ---------- */
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.68) 0%,
+            rgba(0, 0, 0, 0.40) 45%,
+            rgba(0, 0, 0, 0.18) 100%
+        );
+
+    z-index: 1;
+}
+
+
+/* ---------- Conteúdo ---------- */
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+
+    width: min(100% - 40px, var(--largura-container));
+}
+
+
+.hero-content {
+    max-width: 720px;
+    padding: 120px 0 100px;
+}
+
+
+/* ---------- Localização ---------- */
+
+.hero-location {
+    display: inline-block;
+
+    margin-bottom: 22px;
+
+    color: #f1d4a8;
+
+    font-size: 0.82rem;
+    font-weight: 700;
+
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+}
+
+
+/* ---------- Título ---------- */
+
+.hero h1 {
+    max-width: 760px;
+
+    margin-bottom: 24px;
+
+    color: var(--cor-branca);
+
+    font-family: var(--fonte-titulo);
+
+    font-size: clamp(3.2rem, 7vw, 6.5rem);
+
+    line-height: 0.98;
+    font-weight: 700;
+}
+
+
+/* ---------- Texto ---------- */
+
+.hero p {
+    max-width: 580px;
+
+    margin-bottom: 34px;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+
+/* ---------- Botões ---------- */
+
+.hero-buttons {
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+
+.hero-buttons .button {
+    min-width: 160px;
+}
+
+
+/* Botão principal */
+
+.hero-buttons .button-primary {
+    background-color: var(--cor-principal);
+    border-color: var(--cor-principal);
+    color: var(--cor-branca);
+}
+
+
+.hero-buttons .button-primary:hover {
+    background-color: var(--cor-principal-escura);
+    border-color: var(--cor-principal-escura);
+}
+
+
+/* Botão secundário */
+
+.hero-buttons .button-secondary {
+    background-color: rgba(255, 255, 255, 0.08);
+
+    border-color: rgba(255, 255, 255, 0.75);
+
+    color: var(--cor-branca);
+
+    backdrop-filter: blur(4px);
+}
+
+
+.hero-buttons .button-secondary:hover {
+    background-color: var(--cor-branca);
+    border-color: var(--cor-branca);
+    color: var(--cor-principal-escura);
+}
+
+
+/* ========================================
+   HERO / CELULAR
+   ======================================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 92vh;
+        background-position: 55% center;
+    }
+
+
+    .hero-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.48) 0%,
+                rgba(0, 0, 0, 0.58) 55%,
+                rgba(0, 0, 0, 0.78) 100%
+            );
+    }
+
+
+    .hero .container {
+        width: min(100% - 30px, var(--largura-container));
+    }
+
+
+    .hero-content {
+        max-width: 100%;
+        padding: 150px 0 60px;
+    }
+
+
+    .hero-location {
+        margin-bottom: 16px;
+
+        font-size: 0.72rem;
+        letter-spacing: 0.18em;
+    }
+
+
+    .hero h1 {
+        margin-bottom: 20px;
+
+        font-size: clamp(3rem, 15vw, 4.8rem);
+        line-height: 0.98;
+    }
+
+
+    .hero p {
+        margin-bottom: 28px;
+
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    .hero-buttons .button {
+        width: 100%;
+    }
+
+}
