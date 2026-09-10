@@ -1,1 +1,253 @@
+/* ========================================
+   BASE VISUAL
+   Restaurante da Fazenda
+======================================== */
 
+/* ---------- Variáveis do projeto ---------- */
+
+:root {
+    --cor-fundo: #f7f3eb;
+    --cor-fundo-claro: #fffdf8;
+    --cor-principal: #3f4a2f;
+    --cor-principal-escura: #2f3824;
+    --cor-destaque: #b47a3c;
+    --cor-texto: #292820;
+    --cor-texto-suave: #6d6a60;
+    --cor-branca: #ffffff;
+    --cor-borda: #ded8ca;
+
+    --fonte-titulo: Georgia, "Times New Roman", serif;
+    --fonte-texto: Arial, Helvetica, sans-serif;
+
+    --largura-container: 1180px;
+
+    --sombra-suave: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    --transicao: 0.3s ease;
+}
+
+
+/* ---------- Reset básico ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    line-height: 1.6;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+button,
+a {
+    transition: var(--transicao);
+}
+
+
+/* ---------- Container ---------- */
+
+.container {
+    width: min(100% - 40px, var(--largura-container));
+    margin-inline: auto;
+}
+
+
+/* ---------- Títulos gerais ---------- */
+
+h1,
+h2,
+h3 {
+    font-family: var(--fonte-titulo);
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+
+h1 {
+    font-size: clamp(2.8rem, 6vw, 5.5rem);
+}
+
+
+h2 {
+    font-size: clamp(2.2rem, 4vw, 4rem);
+}
+
+
+h3 {
+    font-size: 1.6rem;
+}
+
+
+p {
+    color: var(--cor-texto-suave);
+}
+
+
+/* ---------- Rótulos das seções ---------- */
+
+.section-label,
+.hero-label {
+    display: inline-block;
+    margin-bottom: 16px;
+
+    color: var(--cor-destaque);
+
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+
+/* ---------- Títulos de seção ---------- */
+
+.section-heading {
+    max-width: 720px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+
+.section-heading h2 {
+    margin-bottom: 20px;
+}
+
+
+.section-heading p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+/* ---------- Botões ---------- */
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 52px;
+    padding: 0 28px;
+
+    border: 1px solid var(--cor-principal);
+    border-radius: 4px;
+
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+
+.button:hover {
+    background-color: var(--cor-principal-escura);
+    border-color: var(--cor-principal-escura);
+
+    transform: translateY(-2px);
+}
+
+
+.button-secondary {
+    background-color: transparent;
+    color: var(--cor-principal);
+}
+
+
+.button-secondary:hover {
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+}
+
+
+/* ---------- Links de texto ---------- */
+
+.text-link {
+    display: inline-block;
+    margin-top: 20px;
+
+    color: var(--cor-principal);
+
+    font-weight: 700;
+}
+
+
+.text-link:hover {
+    color: var(--cor-destaque);
+}
+
+
+/* ---------- Espaços temporários para imagens ---------- */
+
+.image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ded8ca,
+            #c9c0ad
+        );
+
+    color: #6d685c;
+
+    font-family: var(--fonte-titulo);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+
+/* ---------- Responsividade básica ---------- */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: min(100% - 30px, var(--largura-container));
+    }
+
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+
+    .button {
+        width: 100%;
+    }
+
+}
