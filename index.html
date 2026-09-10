@@ -1,16 +1,625 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Restaurante da Fazenda — comida caipira, pizzas e uma experiência especial para toda a família."
+    >
+
     <title>Restaurante da Fazenda</title>
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Restaurante da Fazenda</h1>
+    <!-- ========================================
+         CABEÇALHO / NAVEGAÇÃO
+    ========================================= -->
 
-    <p>Em breve, nosso novo site estará aqui.</p>
+    <header class="header">
+
+        <div class="container">
+
+            <a href="#inicio" class="logo">
+                Restaurante da Fazenda
+            </a>
+
+            <nav class="nav" aria-label="Navegação principal">
+
+                <a href="#inicio">Início</a>
+
+                <a href="#sobre">Sobre</a>
+
+                <a href="#especialidades">Especialidades</a>
+
+                <a href="#galeria">Galeria</a>
+
+                <a href="#localizacao">Localização</a>
+
+                <a href="#contato">Contato</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- ========================================
+             HERO / PRIMEIRA SEÇÃO
+        ========================================= -->
+
+        <section id="inicio" class="hero">
+
+            <div class="container">
+
+                <div class="hero-content">
+
+                    <span class="hero-label">
+                        Restaurante da Fazenda
+                    </span>
+
+                    <h1>
+                        Sabor de fazenda,
+                        <br>
+                        momentos inesquecíveis.
+                    </h1>
+
+                    <p>
+                        Uma experiência gastronômica que reúne
+                        sabores da comida caipira, pizzas e aquele
+                        ambiente especial para aproveitar bons momentos.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#especialidades" class="button">
+                            Conheça nosso cardápio
+                        </a>
+
+                        <a href="#localizacao" class="button button-secondary">
+                            Como chegar
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Espaço reservado para a imagem principal -->
+
+                <div class="hero-image">
+
+                    <div class="image-placeholder">
+                        Foto principal do restaurante
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             SOBRE O RESTAURANTE
+        ========================================= -->
+
+        <section id="sobre" class="about">
+
+            <div class="container">
+
+                <div class="about-image">
+
+                    <div class="image-placeholder">
+                        Foto do restaurante
+                    </div>
+
+                </div>
+
+                <div class="about-content">
+
+                    <span class="section-label">
+                        Nossa história
+                    </span>
+
+                    <h2>
+                        Um lugar para comer bem
+                        e aproveitar o momento.
+                    </h2>
+
+                    <p>
+                        O Restaurante da Fazenda foi pensado para
+                        proporcionar uma experiência que vai além da
+                        comida.
+                    </p>
+
+                    <p>
+                        Aqui você encontra sabores marcantes,
+                        ambiente agradável e aquele clima perfeito
+                        para reunir família e amigos.
+                    </p>
+
+                    <a href="#contato" class="text-link">
+                        Venha conhecer
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             ESPECIALIDADES
+        ========================================= -->
+
+        <section id="especialidades" class="specialties">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        Sabores da casa
+                    </span>
+
+                    <h2>
+                        Nossas especialidades
+                    </h2>
+
+                    <p>
+                        Uma seleção de sabores para diferentes
+                        momentos e gostos.
+                    </p>
+
+                </div>
+
+
+                <div class="specialties-grid">
+
+                    <!-- CARD 1 -->
+
+                    <article class="specialty-card">
+
+                        <div class="card-image">
+                            <div class="image-placeholder">
+                                Foto comida caipira
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+
+                            <h3>
+                                Comida Caipira
+                            </h3>
+
+                            <p>
+                                Pratos com aquele sabor tradicional
+                                de comida feita no fogão da fazenda.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 2 -->
+
+                    <article class="specialty-card">
+
+                        <div class="card-image">
+                            <div class="image-placeholder">
+                                Foto pizza
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+
+                            <h3>
+                                Pizzas
+                            </h3>
+
+                            <p>
+                                Pizzas preparadas para compartilhar
+                                bons momentos com quem você gosta.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 3 -->
+
+                    <article class="specialty-card">
+
+                        <div class="card-image">
+                            <div class="image-placeholder">
+                                Foto especialidade
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+
+                            <h3>
+                                Sabores Especiais
+                            </h3>
+
+                            <p>
+                                Outras opções para completar a
+                                experiência no Restaurante da Fazenda.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             GALERIA DE FOTOS
+        ========================================= -->
+
+        <section id="galeria" class="gallery">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        Conheça o ambiente
+                    </span>
+
+                    <h2>
+                        Uma experiência que começa pelo olhar
+                    </h2>
+
+                    <p>
+                        Veja alguns momentos e detalhes do
+                        Restaurante da Fazenda.
+                    </p>
+
+                </div>
+
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-item">
+                        <div class="image-placeholder">
+                            Foto 1
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="image-placeholder">
+                            Foto 2
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="image-placeholder">
+                            Foto 3
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="image-placeholder">
+                            Foto 4
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="image-placeholder">
+                            Foto 5
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             DIFERENCIAIS / EXPERIÊNCIA
+        ========================================= -->
+
+        <section class="experience">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        Por que visitar
+                    </span>
+
+                    <h2>
+                        Mais do que uma refeição
+                    </h2>
+
+                </div>
+
+
+                <div class="experience-grid">
+
+                    <article class="experience-item">
+
+                        <span class="experience-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Sabor
+                        </h3>
+
+                        <p>
+                            Receitas e sabores pensados para
+                            proporcionar uma experiência marcante.
+                        </p>
+
+                    </article>
+
+
+                    <article class="experience-item">
+
+                        <span class="experience-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Ambiente
+                        </h3>
+
+                        <p>
+                            Um espaço agradável para reunir família,
+                            amigos e aproveitar o momento.
+                        </p>
+
+                    </article>
+
+
+                    <article class="experience-item">
+
+                        <span class="experience-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Experiência
+                        </h3>
+
+                        <p>
+                            Uma combinação de gastronomia,
+                            ambiente e bons momentos.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             LOCALIZAÇÃO
+        ========================================= -->
+
+        <section id="localizacao" class="location">
+
+            <div class="container">
+
+                <div class="location-content">
+
+                    <span class="section-label">
+                        Onde estamos
+                    </span>
+
+                    <h2>
+                        Venha conhecer o
+                        Restaurante da Fazenda
+                    </h2>
+
+                    <p>
+                        Estamos esperando você para uma experiência
+                        especial de gastronomia e bons momentos.
+                    </p>
+
+
+                    <div class="location-info">
+
+                        <div class="info-item">
+
+                            <strong>
+                                Endereço
+                            </strong>
+
+                            <p>
+                                Endereço do Restaurante da Fazenda
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-item">
+
+                            <strong>
+                                Horário
+                            </strong>
+
+                            <p>
+                                Consulte nossos horários de atendimento.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <a
+                        href="#contato"
+                        class="button"
+                    >
+                        Ver localização
+                    </a>
+
+                </div>
+
+
+                <div class="map-placeholder">
+
+                    <span>
+                        Mapa / localização
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             CTA / CONTATO
+        ========================================= -->
+
+        <section id="contato" class="contact">
+
+            <div class="container">
+
+                <div class="contact-content">
+
+                    <span class="section-label">
+                        Faça uma visita
+                    </span>
+
+                    <h2>
+                        Seu próximo momento especial
+                        pode começar aqui.
+                    </h2>
+
+                    <p>
+                        Entre em contato com o Restaurante da Fazenda
+                        e confira informações sobre atendimento,
+                        reservas e funcionamento.
+                    </p>
+
+                    <a
+                        href="#"
+                        class="button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Falar pelo WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         RODAPÉ
+    ========================================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-brand">
+
+                <h2>
+                    Restaurante da Fazenda
+                </h2>
+
+                <p>
+                    Sabor, tradição e bons momentos.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#inicio">
+                    Início
+                </a>
+
+                <a href="#sobre">
+                    Sobre
+                </a>
+
+                <a href="#especialidades">
+                    Especialidades
+                </a>
+
+                <a href="#galeria">
+                    Galeria
+                </a>
+
+                <a href="#localizacao">
+                    Localização
+                </a>
+
+                <a href="#contato">
+                    Contato
+                </a>
+
+            </div>
+
+
+            <div class="footer-social">
+
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    Instagram
+                </a>
+
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    Facebook
+                </a>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Restaurante da Fazenda.
+                    Todos os direitos reservados.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript principal -->
+    <script src="script.js"></script>
 
 </body>
+
 </html>
