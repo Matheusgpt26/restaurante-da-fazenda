@@ -251,3 +251,60 @@ p {
     }
 
 }
+/* ========================================
+   MENU MOBILE
+   ======================================== */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--cor-texto);
+    padding: 5px;
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+/* Celular */
+@media (max-width: 768px) {
+
+    .header .container {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--cor-fundo-claro);
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+        box-shadow: var(--sombra-suave);
+        z-index: 1000;
+    }
+
+    .nav.menu-open {
+        display: flex;
+    }
+
+    .nav a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
