@@ -479,9 +479,9 @@ p {
         background:
             linear-gradient(
                 180deg,
-                rgba(0, 0, 0, 0.48) 0%,
-                rgba(0, 0, 0, 0.58) 55%,
-                rgba(0, 0, 0, 0.78) 100%
+                rgba(0, 0, 0, 0.58) 0%,
+rgba(0, 0, 0, 0.32) 45%,
+rgba(0, 0, 0, 0.12) 100%
             );
     }
 
@@ -492,10 +492,10 @@ p {
 
 
     .hero-content {
-        max-width: 100%;
-        padding: 150px 0 60px;
-    }
-
+.hero-content {
+    max-width: 720px;
+    padding: 90px 0 100px;
+}
 
     .hero-location {
         margin-bottom: 16px;
