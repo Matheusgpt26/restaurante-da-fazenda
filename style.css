@@ -1043,3 +1043,41 @@ rgba(0, 0, 0, 0.12) 100%
     }
 
 }
+/* ========================================
+   DESTAQUE — CULINÁRIA CAIPIRA
+   ======================================== */
+
+.experience-feature .experience-image {
+    height: 560px;
+}
+
+.experience-feature .experience-content {
+    padding: 28px 30px 32px;
+}
+
+.experience-feature .experience-content h3 {
+    font-size: 1.45rem;
+    margin-bottom: 10px;
+}
+
+.experience-feature .experience-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Mantém a proporção equilibrada no celular */
+@media (max-width: 768px) {
+
+    .experience-feature .experience-image {
+        height: 380px;
+    }
+
+    .experience-feature .experience-content {
+        padding: 22px 20px 26px;
+    }
+
+    .experience-feature .experience-content h3 {
+        font-size: 1.3rem;
+    }
+
+}
