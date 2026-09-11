@@ -1081,3 +1081,112 @@ rgba(0, 0, 0, 0.12) 100%
     }
 
 }
+/* ========================================
+   CORREÇÃO — GRID DA EXPERIÊNCIA
+   ======================================== */
+
+/* Grid das fotos */
+.gallery .experience-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+    width: 100%;
+}
+
+/* Grid dos três pilares */
+.experience .experience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 64px;
+    width: 100%;
+}
+
+
+/* ========================================
+   MAIS DO QUE UMA REFEIÇÃO
+   ======================================== */
+
+.experience {
+    padding: 120px 0;
+    background-color: var(--cor-fundo-claro);
+}
+
+.experience .section-heading {
+    max-width: 760px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+.experience .section-heading h2 {
+    margin-bottom: 0;
+}
+
+.experience-item {
+    position: relative;
+    padding-top: 18px;
+    border-top: 1px solid var(--cor-borda);
+}
+
+.experience-number {
+    display: block;
+    margin-bottom: 22px;
+
+    color: var(--cor-destaque);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+}
+
+.experience-item h3 {
+    margin-bottom: 14px;
+
+    color: var(--cor-texto);
+
+    font-size: 1.8rem;
+}
+
+.experience-item p {
+    max-width: 300px;
+
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   MAIS DO QUE UMA REFEIÇÃO — CELULAR
+   ======================================== */
+
+@media (max-width: 768px) {
+
+    .experience {
+        padding: 80px 0;
+    }
+
+    .experience .section-heading {
+        margin-bottom: 50px;
+    }
+
+    .experience .experience-grid {
+        grid-template-columns: 1fr;
+        gap: 42px;
+    }
+
+    .experience-item {
+        padding-top: 16px;
+    }
+
+    .experience-number {
+        margin-bottom: 16px;
+    }
+
+    .experience-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .experience-item p {
+        max-width: none;
+    }
+
+}
