@@ -1353,3 +1353,72 @@ rgba(0, 0, 0, 0.12) 100%
         font-size: 1.25rem;
     }
 }
+
+/* ========================================
+   SOBRE / AMBIENTE
+   ======================================== */
+
+.about {
+    padding: 110px 0;
+    background-color: var(--cor-fundo);
+}
+
+.about .container {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.about-image {
+    height: 560px;
+    overflow: hidden;
+    box-shadow: var(--sombra-suave);
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-content {
+    max-width: 560px;
+}
+
+.about-content h2 {
+    margin-bottom: 24px;
+}
+
+.about-content p {
+    margin-bottom: 18px;
+    line-height: 1.8;
+}
+
+.about-content .text-link {
+    margin-top: 10px;
+}
+
+
+/* ---------- Ambiente no celular ---------- */
+
+@media (max-width: 768px) {
+
+    .about {
+        padding: 80px 0;
+    }
+
+    .about .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-image {
+        height: 420px;
+    }
+
+    .about-content {
+        max-width: none;
+    }
+
+}
