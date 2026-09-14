@@ -1426,3 +1426,85 @@ rgba(0, 0, 0, 0.12) 100%
     }
 
 }
+
+/* ========================================
+   RODAPÉ
+   ======================================== */
+
+.footer {
+    padding: 70px 0 25px;
+    background-color: var(--cor-principal-escura);
+    color: var(--cor-branca);
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 0.8fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.footer-brand h2 {
+    margin-bottom: 10px;
+    color: var(--cor-branca);
+    font-size: 1.8rem;
+}
+
+.footer-brand p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-links,
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links a,
+.footer-social a {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: var(--cor-branca);
+}
+
+.footer-bottom {
+    grid-column: 1 / -1;
+    padding-top: 25px;
+    margin-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.8rem;
+}
+
+
+/* ---------- Rodapé no celular ---------- */
+
+@media (max-width: 768px) {
+
+    .footer {
+        padding: 55px 0 25px;
+    }
+
+    .footer .container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-links,
+    .footer-social {
+        gap: 10px;
+    }
+
+    .footer-bottom {
+        margin-top: 5px;
+    }
+
+}
