@@ -559,7 +559,11 @@ rgba(0, 0, 0, 0.12) 100%
     color: var(--cor-branca);
 }
 
-.nav a {
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}.nav a {
     color: var(--cor-branca);
 }
 
