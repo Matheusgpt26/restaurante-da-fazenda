@@ -1096,7 +1096,17 @@ rgba(0, 0, 0, 0.12) 100%
     gap: 24px;
     width: 100%;
 }
+@media (max-width: 768px) {
+    .gallery .experience-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 
+    .gallery .experience-feature,
+    .gallery .experience-card {
+        grid-column: auto;
+    }
+}
 /* Grid dos três pilares */
 .experience .experience-grid {
     display: grid;
