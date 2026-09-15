@@ -274,7 +274,6 @@ p {
 
 /* Celular */
 @media (max-width: 768px) {
-
     .header .container {
         position: relative;
     }
@@ -291,9 +290,11 @@ p {
         left: 0;
         right: 0;
         background: var(--cor-fundo-claro);
-        padding: 20px;
+        padding: 14px 20px 18px;
         flex-direction: column;
-        gap: 15px;
+        align-items: flex-start;
+        gap: 6px;
+        height: auto;
         box-shadow: var(--sombra-suave);
         z-index: 1000;
     }
@@ -305,7 +306,7 @@ p {
     .nav a {
         display: block;
         width: 100%;
-        padding: 10px 0;
+        padding: 6px 0;
     }
 }
 /* ========================================
