@@ -290,10 +290,10 @@ p {
         left: 0;
         right: 0;
         background: var(--cor-fundo-claro);
-        padding: 14px 20px 18px;
+        padding: 10px 20px 14px;
         flex-direction: column;
         align-items: flex-start;
-        gap: 6px;
+        gap: 2px;
         height: auto;
         box-shadow: var(--sombra-suave);
         z-index: 1000;
@@ -306,7 +306,7 @@ p {
     .nav a {
         display: block;
         width: 100%;
-        padding: 6px 0;
+        padding: 4px 0;
     }
 }
 /* ========================================
